@@ -1,0 +1,37 @@
+    1 sudo apt update
+    2  mkdir Assignment1
+    3  ls
+    4  nono Code.txt
+    5  nano code.txt
+    6  cat code.txt
+    7  nano Log.txt
+    8  cat Log.txt
+    9  nano Output.txt
+   10  git init
+   11  rm -rf .git
+   12  ls
+   13  cd Assignmet1
+   14  ls
+   15  cd Assignment1
+   16  nano Log.txt
+   17  nano Code.txt
+   18  nano Output.txt
+   19  git init
+   20  git status
+   21  add Code.txt Output.txt
+   22  git add Code.txt Output.txt
+   23  git status
+   24  clear
+   25  git remote add origin https://github.com/Vaishnavi-Golhar/Git.git
+   26  git push origin master
+   27  git push -u origin main
+   28  git remote add origin https://github.com/Vaishnavi-Golhar/Git.git
+   29  cd Assignment1
+   30  git status
+   31  git remote add origin https://github.com/Vaishnavi-Golhar/Git.git
+   32  git push master
+   33  commit -m "first commit"
+   34  git commit -m "first commit"
+   35  git status
+   36  git push origin master
+   37  history
