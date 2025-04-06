@@ -1,0 +1,12 @@
+sudo docker pull ubuntu
+sudo docker images
+sudo docker run -itd -p 80:80 ubuntu
+ASSIGNMENT 1
+
+sudo docker ps
+sudo docker exec -it c21asdv bash
+apt-get update
+apt-get install apache2 -y
+service apache2 status
+service apache2 start
+service apache2 status
