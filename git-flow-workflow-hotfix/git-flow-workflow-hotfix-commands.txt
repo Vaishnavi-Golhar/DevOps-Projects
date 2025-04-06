@@ -1,0 +1,46 @@
+ 1  sudo apt update
+    2  mkdir task5
+    3  cd task5
+    4  git init
+    5  touch main.txt
+    6  git add.
+    7  git add .
+    8  git commit -m 'main.txt commiting'
+    9  git branch -m main
+   10  git branch
+   11  git branch test
+   12  git branch f1
+   13  git branch f2
+   14  git brnch
+   15  git branch
+   16  git checkout f1
+   17  touch f1.txt
+   18  git add .
+   19  git commit -m'commiting f1'
+   20  git checkout f2
+   21  touch f2.txt
+   22  git add .
+   23  git commit -m 'commiting f2'
+   24  clear
+   25  git checkout test
+   26  git merge f1
+   27  git merge f2
+   28  git remote add origin https://github.com/Vaishnavi-Golhar/task5.git
+   29  git push -u origin main
+   30  git push task5 f1
+   31  git push https://github.com/Vaishnavi-Golhar/task5.git f1
+   32  git push https://github.com/Vaishnavi-Golhar/task5.git f2
+   33  git push https://github.com/Vaishnavi-Golhar/task5.git test
+   34  git branch
+   35  git branch hotfix
+   36  git branch
+   37  git checkout hotfix
+   38  touch urgent.txt
+   39  git add .
+   40  git commit -m 'commiting urgent.txt file'
+   41  git push https://github.com/Vaishnavi-Golhar/task5.git hotfix
+   42  clear
+   43  git checkout main
+   44  git merge hotfix
+   45  git push https://github.com/Vaishnavi-Golhar/task5.git main
+   46  history
