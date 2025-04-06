@@ -1,0 +1,112 @@
+ sudo apt update
+    2  sudo apt install docker.io -y
+    3  docker --version
+    4  sudo docker pull ubuntu
+    5  clear
+    6  sudo docker images
+    7  sudo docker run -itd -p 80:80 ubuntu
+    8  sudo docker ps
+    9  sudo docker exec -it c2183428ed5e bash
+   10  history
+
+1  apt-get update
+    2  apt-get install apache2 -y
+    3  service apache2 status
+    4  service apache2 start
+    5  service apache2 status
+    6  exit
+
+
+
+ASsignment 2
+
+   11  sudo docker ps
+   12  sudo docker commit c2183428ed5e image1
+   13  sudo docker images
+   14  sudo docker run -itd -p 81:80 --name C1 image1
+   15  sudo docker ps
+   16  sudo docker exec -it C1 bash
+   17  history 
+
+
+
+    7  apt-get update
+    8  service apache2 status
+    9  service apache2 start
+   10  service apache2 status
+   11  history
+
+
+
+
+
+
+
+assignment 3 command on docker 1 ec2 srvver
+
+sudo docker images
+   19  sudo docker tag image1 vaishnavigolhar/image1
+   20  sudo docker images
+   21  sudo docker login
+   22  sudo docker push vaishnavigolhar/image1
+   23  history
+
+
+Assignment 3 vaishnavigolhar
+
+ sudo apt update
+    2  sudo apt install docker.io -y
+    3  sudo docker login
+    4  sudo docker pull vaishnavigolhar / image1 
+    5  sudo docker pull vaishnavigolhar/image1
+    6  sudo docker images
+    7  sudo docker run -itd -p 80:80 --name newC2 vaishnavigolhar/image1
+    8  sudo docker ps
+    9  sudo docker exec -it newC2 bash
+   10  history
+
+
+
+
+  apt-get update
+    8  service apache2 status
+    9  service apache2 start
+   10  service apache2 status
+   11  history
+
+
+
+
+
+
+Assignment 4 
+
+ sudo nano Dockerfile
+   26  cat Dockerfile
+   27  sudo docker build . -t image2
+   28  clear
+   29  sudo docker images
+   30  sudo docker run -itd -p 82:80 --name C3 image2
+   31  sudo docker ps
+   32  sudo docker exec -it C3 bash
+   33  history
+
+service apache2 status
+    2  history
+
+
+
+
+
+
+Assignmet 5
+
+ sudo nano index.html
+   36  sudo nano Dockerfile
+   37  cat Dockerfile
+   38  sudo docker run -idt -p 83:80  --name C4 images3
+   39  sudo docker build . -t image3
+   40  sudo docker run -idt -p 83:80  --name C4 images3
+   41  sudo docker run -itd -p 83:80 --name C4 image3
+   42  sudo docker exec -it C4 bash
+   43  history
