@@ -55,6 +55,6 @@ git push -u origin main
 ## 👩‍💻 Author
 
 **Vaishnavi Golhar**  
-📧 vaishnavigolhar23@gmail.com  
+📧 vaishnavigolhar05@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/vaishnavigolhar/)
 
