@@ -1,0 +1,9 @@
+sudo nano index.html
+   36  sudo nano Dockerfile
+   37  cat Dockerfile
+   38  sudo docker run -idt -p 83:80  --name C4 images3
+   39  sudo docker build . -t image3
+   40  sudo docker run -idt -p 83:80  --name C4 images3
+   41  sudo docker run -itd -p 83:80 --name C4 image3
+   42  sudo docker exec -it C4 bash
+   43  history
