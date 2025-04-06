@@ -1,0 +1,86 @@
+
+Step 1: Install Docker and Kubernetes Components
+Install Docker:
+
+sudo apt-get update
+sudo apt-get install -y docker.io
+sudo systemctl enable docker
+sudo systemctl start docker
+
+2. Run the Script on All Nodes:
+
+
+sudo apt-get install -y apt-transport-https ca-certificates curl gpg
+sudo mkdir -p /etc/apt/keyrings
+sudo chmod -R 755 /etc/apt/keyrings
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+echo "deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo apt-get update
+sudo apt-get install -y kubelet kubeadm kubectl
+sudo systemctl enable --now kubelet
+
+
+
+3. Initialize the Master Node:
+
+sudo kubeadm init --pod-network-cidr=192.168.0.0/16
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+
+
+
+4.Join Worker Nodes to the Cluster:
+
+kubeadm token create --print-join-command
+sudo kubeadm join <master-node-ip>:6443 --token <token> --discovery-token-ca-cert-hash sha256:<hash>
+kubectl get nodes
+
+5.Create and Apply the NGINX Deployment:
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+EOF
+
+
+kubectl apply -f deploy1.yaml
+kubectl get deployments
+kubectl get pods
+kubectl describe deployment nginx-deployment
+
+
+
+
+
+
+
+
+
+
+
+
+kubeadm join 172.31.4.255:6443 --token rc1zsf.macmfqdbio6s2l33 \
+        --discovery-token-ca-cert-hash sha256:65dcebc23f17ea902081b886fb835b57b7d018e277afcfb2c79582e141efdfea
+
+
+
+
+
