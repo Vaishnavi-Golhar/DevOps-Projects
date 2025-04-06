@@ -1,0 +1,104 @@
+1  sudo apt update
+    2  mkdir Assignment3
+    3  cd Assignment3
+    4  git init
+    5  touch main.txt
+    6  add .
+    7  git add .
+    8  git commit -m "main"
+    9  git branch
+   10  git branch develop
+   11  git branch f1
+   12  git branch f2
+   13  git checkout develop
+   14  touch develop.txt
+   15  git add .
+   16  git commit -m "develop"
+   17  git checkout fe
+   18  git checkout f1
+   19  touch f1.txt
+   20  git add .
+   21  git commit -m "f1"
+   22  git checkout f2
+   23  touch f2.txt
+   24  git add .
+   25  git commit -m "f2"
+   26  git checkout master
+   27  git branch
+   28  git remote add origin git@github.com:Vaishnavi-Golhar/Git-Assignment3.git
+   29  git push --all
+   30  git remote add origin git@github.com:Vaishnavi-Golhar/Git-Assignment3.git
+   31  git push origin --all
+   32  git remote add origin git@github.com:Vaishnavi-Golhar/git3.git
+   33  git remote add origin https://github.com/Vaishnavi-Golhar/git3.git
+   34  git push origin --all
+   35  git branch -M main
+   36  git branch
+   37  git status
+   38  git checkout develop
+   39  git status
+   40  git checkout f1
+   41  git status
+   42  git checkout f2
+   43  git status
+   44  git remote add origin https://github.com/Vaishnavi-Golhar/Git-Assignment3.git
+   45  git push origin --all
+   46  https://github.com/Vaishnavi-Golhar/Git.git
+   47  git remote add origin https://github.com/Vaishnavi-Golhar/Git.git
+   48  git push origin --all
+   49  git remote add origin https://github.com/Vaishnavi-Golhar/git3.git
+   50  git remote -v
+   51  git push origin --all
+   52  git fetch --all
+   53  git push origin --all
+   54  cd\
+   55  Assignment3 cd
+   56  \cd
+   57  ls
+   58  cd Assignment3
+   59  ls
+   60  git init
+   61  ls
+   62  git branch
+   63  git branch -M main
+   64  git remote add origin https://github.com/Vaishnavi-Golhar/Git33.git
+   65  git remote remove origin
+   66  git remote add origin https://github.com/Vaishnavi-Golhar/Git33.git
+   67  git push origin --all
+   68  git branch
+   69  git branch f2
+   70  touch f2.txt
+   71  git add .
+   72  git status
+   73  git branch f2
+   74  git checkout f2
+   75  git add f2.txt
+   76  git commit -m "f2"
+   77  git branch
+   78  git checkout main
+   79  ls
+   80  git rm main.txt
+   81  git commit -m
+   82  git status
+   83  git restor --stagged main.txt"
+   84  git restore --stagged main.txt
+   85  git restore --staged main.txt
+   86  git status
+   87  ls
+   88  git add main.txt
+   89  git commit -m"main"
+   90  ls
+   91  git checkout main
+   92  ls
+   93  touch main.txt
+   94  git add main.txt
+   95  git commit -m "main"
+   96  git status
+   97  ls
+   98  git rm f2.txt
+   99  git commit -m "remove f2"
+  100  ls
+  101  git push origin --all
+  102  git branch -D f2
+  103  git push origin --delete f2
+  104  history
