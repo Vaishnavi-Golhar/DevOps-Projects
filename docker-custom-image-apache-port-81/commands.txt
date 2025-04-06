@@ -1,0 +1,8 @@
+sudo docker ps
+sudo docker commit container1 Image1
+sudo docker run -itd -p 82:80 Image1
+sudo docker ps 
+sudo docker exec -id conatiner2
+apt update
+service apache2 status
+service apache2 start
