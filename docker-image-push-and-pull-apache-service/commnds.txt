@@ -1,0 +1,16 @@
+sudo docker images
+sudo docker tag Image1 vaishnavigolhar/Image1
+sudo docker images
+sudo docker login
+sudo docker push vaishnavigolhar/Image1
+
+sudo apt install docker.io -y
+sudo docker login
+sudo docker pull vaishnavigolhar/Image1
+sudo docker images
+sudo docker run -itd -p 80:80 --name newContainer vaishnavigolhar/Image1
+sudo doocker ps
+sudo docker exec -it newContainer bash
+apt update 
+service apache2 status
+service apache2 start
