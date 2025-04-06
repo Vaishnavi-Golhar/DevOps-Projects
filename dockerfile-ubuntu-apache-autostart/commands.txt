@@ -1,0 +1,14 @@
+sudo nano dockerfile
+
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install apache2 -y
+ENTRYPOINT apachectl -D FORGROUND
+
+cat dockerfile
+sudo docker build . -t image4
+sudo docker images
+sudo docker run -itd -p 82:80 --name Con4 image4
+sudo docker ps
+sudo docker exec -it Con4 bash
+service apache2 status
